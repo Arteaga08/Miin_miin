@@ -1,4 +1,3 @@
-
 :root {
   --red-logo-dark: #9e1b1b;
   --pink-logo-light: #f7b6c2;
@@ -155,7 +154,6 @@ body {
   backdrop-filter: blur(5px);
 }
 
-
 .btn:hover {
   background-color: var(--red-logo-dark);
   color: white;
@@ -167,24 +165,19 @@ body {
 @media (max-width: 480px) {
   /* 1. BAJAR EL LOGO */
   .top-block {
-    margin-top: 50px !important;
+    margin-top: 80px !important;
   }
-
 
   .logo {
     font-size: 2.8em;
-
-    margin-bottom: 50px !important;
-
+    margin-bottom: -40px !important; /* 🔧 antes -100 */
     display: block;
   }
 
-  /* 3. SUBIR TÍTULO K-BEAUTY Y ONLINE */
+  /* 2. SUBIR K-BEAUTY Y ONLINE */
   .sub-heading {
-    margin-top: 0 !important;
-
+    margin-top: 80px !important; /* 🔧 px corregido */
     font-size: 1.2em;
-
     letter-spacing: 3px;
   }
 
@@ -192,9 +185,8 @@ body {
     margin-top: 10px !important;
   }
 
-  /* 4. MANTENER REDES SOCIALES ABAJO */
-
+  /* 3. BAJAR REDES SIN ROMPER VIEWPORT */
   .center-block {
-    margin-bottom: 60px !important;
+    margin-top: 350px !important; /* 🔧 sin negativo */
   }
 }
